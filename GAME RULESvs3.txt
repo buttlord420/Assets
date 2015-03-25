@@ -2,12 +2,14 @@ GUNNERS
 an OGS (oberlin games squad) GameE
 
 OBJECTIVES:
-PRESS BUTTON OR KILL ENEMY TEAM
+DELIVER THE GUN TO SPAWN ZONE
+OR KILL ENEMY TEAM
 
 MODE:
 CHESS-STYLE TURNS (YOU CAN CHOOSE ANY ONE PIECE AND MOVE IT)
 PIXEL-SIZED GRID
-
+EVERY MAP MUST HAVE TWO TEAM SPAWN ZONES AND A 'THE GUN' SPAWN
+CHARACTERS WITH THE GUN CAN SHOOT THROUGH SHIELDS
 
 
 TURN PROGRESSION:
@@ -18,7 +20,7 @@ TURN PROGRESSION:
 WHEN player selects a gunner,
 	-> de-highlight all other gunners
 	-> generate movement map (normal movement and dash movement zones)
-	-> make SHOOT and SHIELD abilities selectable
+	-> make SHOOT, SHIELD, and OVERWATCH abilities selectable
 //movement phase
 WHEN player moves,
 -> begin movement procedures
@@ -46,9 +48,15 @@ IF player clicks on SHOOT,
 	-> when player inputs confirmation, fire bullet, compute hit/block
 	-> end turn
 IF player clicks on SHIELD
--> run shiled procedure
-	-> generate shield "map" around character
+-> run shield procedure
+	-> generate shield map around character
 //shield map highlights terrain and enemy gunners within 90 degree cone emanating from center of gunner
 // shield can be rotated/swiveled around with the mouse
 	-> when player inputs confirmation, record orientation of shield
 	-> end turn
+IF player clicks on OVERWATCH
+-> run overwtch procedure
+	-> generate overwatch map around character
+
+// overwatch map highlights terrain and enemy gunners within 45 degree cone emanating from center of gunner
+// overwatch zone can be rotated/swiveled around with the mouse

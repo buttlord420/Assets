@@ -4,15 +4,10 @@ MOVESPEED - 216 pixels/round
 gun range - unlimited
 one shot kills
 
-TURN:
-movement
-at start of movement, either move in blue-outlined radius or 
-DASH to a point in larger, yellow-outlined radius - DASHING units have an additional 108 pixels to move--there ought to be a warning prompt if someone dashes
-
-
-at end of movement, if unit DASHED, end turn.
-if unit did not have DASH and has movement points to spend, they may spend them, but light up SHIELD and SHOOT abilities
-otherwise, prompt player with SHOOT and SHIELD abilities
-
-SHIELD: BLOCK bullets received within a 90 degree cone (can BLOCK any number of bullets). SHIELD has a 1 turn COOLDOWN.
+DASH: move an additional 108 pixels. if a gunner DASHES, no other action can be taken. there will be a warning when a player orders his gunner to DASH.
+SHIELD: BLOCK bullets received within a 90 degree cone (can BLOCK any number of bullets). SHIELD has a 1 turn COOLDOWN.*
 SHOOT: take one shot at an enemy. enemies that can BLOCK will be lowlighted, enemies that cannot BLOCK will be highlighted. SHOOT has no cooldown.
+OVERWATCH: gunner cocks gun/aims down sights. overwatch covers a 45 degree cone. the first person to enter the OVERWATCH space, friend or foe, will be shot. after this the gunner is in a default 'no-shield' position. overwatch has a 3 turn COOLDOWN.*
+
+*COOLDOWNS are team-based, not individual
+

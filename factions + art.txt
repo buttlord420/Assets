@@ -22,13 +22,14 @@ perk: Mobile PPUs ('moving shields'):
 shield is always 'active,' even if you fire
 	perk art: they move with their shields in front of them, they never put shields down
 		**they only put the shield down if it is in the way when they are firing
+secondary perk: shield has no cooldown
 
 blackpoole security detail (5 gunners)
 art: thuggish, burly americans--think CIA 'black ops.' 
 huge guns, decked out in black (dominant color), green optics (secondary color)
-perk: Preemptive Protection Measures: 
-overwatch' (replaces shield) *** overwatch causes friendly fire
+perk: Preemptive Protection Measures: overwatch has no cooldown
 	perk art: unit cocks gun/aims down his overwatch zone, exclamation point above his head if someone enters, he shoots right after, frowny face if the 'victim' is a friendly
+secondary perk: units can fire multiple times under the same 'overwatch' command
 
 sandmen (2 gunners)
 art: enigmatic, sand-covered humanoids with two red dots for eyes. 
