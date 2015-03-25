@@ -18,6 +18,9 @@ var terrain : Array;
 var inputBool : boolean;
 var pauseMenuBool : boolean;
 
+var spawnBool : boolean;
+var startBool : boolean;
+
 function Start () {
 
 	aTeamFolder = new GameObject();
@@ -32,20 +35,32 @@ function Start () {
 	terrainFolder = new GameObject();
 	terrainFolder.name = "Terrain";
 	terrain = new Array();
+	
+	inputBool = false;
+	pauseMenuBool = false;
+	spawnBool = true;
+	startBool = true;
 
 	// TODO: Initiate Terrain Things Here
 	
 	// TODO: Initiate Devices Here
 	
-	// TODO: Initiate Teams Here
-	//teamAInit();
-	//teamBInit();
-	
 	// TODO: Show Begin Screen
-	
+	testSpawn();
 }
 
 // Team Initialization
+function testSpawn(){
+	for(i=0; i < 5; i++){
+		addTestUnit(-4, 2*i-4, aTeam, aTeamFolder);
+		aTeam[i].model.renderer.material.color = Color(1,0,0);
+	}
+	for(i=0; i < 5; i++){
+		addTestUnit(4, 2*i-4, bTeam, bTeamFolder);
+		bTeam[i].model.renderer.material.color = Color(0,0,1);
+	}
+}
+
 function teamAInit() {
 	// stuff
 }
@@ -63,13 +78,17 @@ function addTestUnit(xPosition: float, yPosition: float, team: Array, teamFolder
 	unitScript.transform.parent = teamFolder.transform;					// Assign Hierarchy
 	unitScript.transform.position = Vector3(xPosition,yPosition,1);		// Position the character at x,y.								
 	
-	unitScript.init(t);													// Initialize Unit
-	team.Add(tileScript);												// Add Unit to Team Array
+	unitScript.init(this,team);													// Initialize Unit
+	team.Add(unitScript);												// Add Unit to Team Array
 	unitScript.name = "Unit" + team.length;								// Number Unit
 	
 }
 
 function Update () {
+	
+	
+	
+	
 	
 }
 
