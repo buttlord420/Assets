@@ -1,0 +1,54 @@
+GUNNERS
+an OGS (oberlin games squad) GameE
+
+OBJECTIVES:
+PRESS BUTTON OR KILL ENEMY TEAM
+
+MODE:
+CHESS-STYLE TURNS (YOU CAN CHOOSE ANY ONE PIECE AND MOVE IT)
+PIXEL-SIZED GRID
+
+
+
+TURN PROGRESSION:
+
+//selection phase
+-> highlight all selectable gunners
+-> start round timer
+WHEN player selects a gunner,
+	-> de-highlight all other gunners
+	-> generate movement map (normal movement and dash movement zones)
+	-> make SHOOT and SHIELD abilities selectable
+//movement phase
+WHEN player moves,
+-> begin movement procedures
+	-> WHEN exiting a pixel
+		-> movement points -1
+		-> record orientation 
+	-> WHEN entering a pixel
+		-> 'moving shield' (matterson conglomerate) generated
+		-> 'overwatch' (xin security detail) enacted
+	-> REPEAT process until gunner reaches destination
+	-> end movement procedures
+-> IF player DASHED, end turn
+//a player DASHES if they move outside of the blue-outlined circle and into the larger, concentric yellow-outline dash circle
+IF player has remaining movement points,
+-> generate movement map
+//dash is no longer available
+-> repeat movement procedures until movement points are expended/player clicks on "end movement phase"
+//abilities phase
+-> highlight SHOOT and SHIELD abilities
+IF player clicks on SHOOT,
+-> run shoot procedures
+	-> let player cycle targets
+		-> highlighted if available
+		-> lowlighted if shielded
+	-> when player inputs confirmation, fire bullet, compute hit/block
+	-> end turn
+IF player clicks on SHIELD
+-> run shiled procedure
+	-> generate shield "map" around character
+//shield map highlights terrain and enemy gunners within 90 degree cone emanating from center of gunner
+// shield can be rotated/swiveled around with the mouse
+	-> when player inputs confirmation, record orientation of shield
+	-> end turn

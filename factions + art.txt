@@ -1,0 +1,38 @@
+FACTIONS:
+
+general aesthetic: cyberpunk corporations
+
+UNSC (5 gunners)
+art: lovable grunts
+dark blue (dominant color), starship troopers getup
+perk: you feel good about playing the underdogs
+
+yokido corp (3 gunners)
+art: cyber-ninja dudes. (think MGS's grey fox)
+grey armor (dominant color)--red line of light for eyes.
+perk: Dangan o Hiku: shields are invisible to the enemy
+	perk art: instead of having a shield, gunner catches/deflects the force if it comes from the hidden, 'shielded' direction)
+
+matterson conglomerate (4 gunners)
+art: adonis-like arrogant ubermensches (ideally germans or scandinavians).
+dark green uniforms (dominant color), dark grey shields
+perk: henderson model 'moving' shields (shield is always 'active,' even if you fire)
+	perk art: they move with their shields in front of the
+		**they only put the shield down if it is in the way when they are firing
+
+blackpoole security detail (5 gunners)
+art: thuggish, burly americans--think CIA 'black ops.' large guns, decked out in black, green optics
+perk: preemptive security measures 'overwatch' (replaces shield) *** overwatch causes friendly fire
+	perk art: unit cocks gun/aims down his overwatch zone, exclamation point above his head if someone enters, he shoots right after, frowny face if the 'victim' is a friendly
+
+sandmen (2 gunners)
+art: enigmatic, sand-covered humanoids with two red dots for eyes. 
+sand-colored, sand sloughs off their bodies constantly
+instead of firing a gun, they raise their hands to their target and it explodes into viscera 
+perk: fear: enemy turn timers are reduced by 66%
+	perk art: they're really scary-looking
+
+ART:
+
+flavor: dystopian metropolis
+corporations vying for control of enemy sectors
