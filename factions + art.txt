@@ -4,35 +4,53 @@ general aesthetic: cyberpunk corporations
 
 UNSC (5 gunners)
 art: lovable grunts
-dark blue (dominant color), starship troopers getup
+dark blue (dominant color), starship troopers getup--no secondary color
 perk: you feel good about playing the underdogs
 
 yokido corp (3 gunners)
-art: cyber-ninja dudes. (think MGS's grey fox)
-grey armor (dominant color)--red line of light for eyes.
+art: cyber-ninja bodysuit dudes. (think MGS's grey fox/raiden)
+light-grey armor (dominant color)--red line of light for eyes, reds in their armor (secondary color)
 perk: Dangan o Hiku: shields are invisible to the enemy
 	perk art: instead of having a shield, gunner catches/deflects the force if it comes from the hidden, 'shielded' direction)
+secondary perk: can move after firing
 
 matterson conglomerate (4 gunners)
 art: adonis-like arrogant ubermensches (ideally germans or scandinavians).
-dark green uniforms (dominant color), dark grey shields
-perk: henderson model 'moving' shields (shield is always 'active,' even if you fire)
-	perk art: they move with their shields in front of the
+dark green uniforms (dominant color), dark grey shields (secondary color)
+their shields are huge and ever-present but they're muscley and can carry them
+perk: Mobile PPUs ('moving shields'):
+shield is always 'active,' even if you fire
+	perk art: they move with their shields in front of them, they never put shields down
 		**they only put the shield down if it is in the way when they are firing
 
 blackpoole security detail (5 gunners)
-art: thuggish, burly americans--think CIA 'black ops.' large guns, decked out in black, green optics
-perk: preemptive security measures 'overwatch' (replaces shield) *** overwatch causes friendly fire
+art: thuggish, burly americans--think CIA 'black ops.' 
+huge guns, decked out in black (dominant color), green optics (secondary color)
+perk: Preemptive Protection Measures: 
+overwatch' (replaces shield) *** overwatch causes friendly fire
 	perk art: unit cocks gun/aims down his overwatch zone, exclamation point above his head if someone enters, he shoots right after, frowny face if the 'victim' is a friendly
 
 sandmen (2 gunners)
 art: enigmatic, sand-covered humanoids with two red dots for eyes. 
-sand-colored, sand sloughs off their bodies constantly
-instead of firing a gun, they raise their hands to their target and it explodes into viscera 
+sand-colored (dominant color), sand sloughs off their bodies constantly (no secondary color)
+instead of firing a gun, they raise a hand to the target and it explodes into viscera 
 perk: fear: enemy turn timers are reduced by 66%
 	perk art: they're really scary-looking
-
 ART:
 
-flavor: dystopian metropolis
-corporations vying for control of enemy sectors
+flavor: dystopian metropoleis
+corporations vying for control of public/enemy corp sectors
+heavy on the greys, blues and blacks + respective corp colors
+neons for public areas
+
+maps: 
+
+presidium: UNSC map: grecoroman govt building. spawn on sides, button in center
+retreat: YC map: shrine-y compound with buildings to navigate/control. spawn in opposite corners, button in central building
+clinic: MC map
+lockup: BSD map: military hardware abounds. spawn in front, button in building near the back
+plaza: neutral map: large square plaza, have to navigate the channels around it for control. spawn in opposite corners, button in center.
+
+
+music:
+depends on map/factions in map(?)
