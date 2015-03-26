@@ -22,7 +22,6 @@ perk: Mobile PPUs ('moving shields'):
 shield is always 'active,' even if you fire
 	perk art: they move with their shields in front of them, they never put shields down
 		**they only put the shield down if it is in the way when they are firing
-secondary perk: shield has no cooldown
 
 blackpoole security detail (5 gunners)
 art: thuggish, burly americans--think CIA 'black ops.' 
