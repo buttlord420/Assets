@@ -11,15 +11,15 @@ var distance : float;
 
 function init(managerVar: GameManager, teamVar: Array) {
 	var modelObject = GameObject.CreatePrimitive(PrimitiveType.Quad);	// Create a quad object for holding the testUnit texture.
-	model = modelObject.AddComponent("testUnitModel");						// Add a testUnitModel script to control visuals of the testUnit.
+	model = modelObject.AddComponent.<testUnitModel>();						// Add a testUnitModel script to control visuals of the testUnit.
 	
 	model.transform.parent = transform;									// Set the model's parent to the testUnit (this object).
 	model.transform.localPosition = Vector3(0,0,0);						// Center the model on the parent.
 	model.name = "Test Unit Model";											// Name the object.
 	
-	model.renderer.material.mainTexture = Resources.Load("Textures/FILLERGUNNER1", Texture2D);	// Set the texture.  Must be in Resources folder.
-	model.renderer.material.color = Color(1,1,1);												// Set the color (easy way to tint things).
-	model.renderer.material.shader = Shader.Find ("Transparent/Diffuse");						// Tell the renderer that our textures have transparency.
+	model.GetComponent.<Renderer>().material.mainTexture = Resources.Load("Textures/FILLERGUNNER1", Texture2D);	// Set the texture.  Must be in Resources folder.
+	model.GetComponent.<Renderer>().material.color = Color(1,1,1);												// Set the color (easy way to tint things).
+	model.GetComponent.<Renderer>().material.shader = Shader.Find ("Transparent/Diffuse");						// Tell the renderer that our textures have transparency.
 	
 	manager = managerVar;
 	team = teamVar;
