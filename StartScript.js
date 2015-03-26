@@ -37,7 +37,7 @@ function OnGUI() {
 	
 	// Start Button
 	if (GUI.Button (Rect((Screen.width/10)*1, (Screen.height/7)*5, Screen.width/2.5, Screen.height/6), startButton)) {
-        //Application.LoadLevel(levelName);
+        Application.LoadLevel("TestMap1");
     }
     GUI.Box (Rect((Screen.width/10)*1, (Screen.height/7)*5, Screen.width/2.5, Screen.height/6), "Start"); 
 
