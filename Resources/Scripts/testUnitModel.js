@@ -13,7 +13,7 @@ function Start () {
 
 function Update () {
 	clock = clock + Time.deltaTime;
-	renderer.material.color = Color(originalR,originalG,originalB);
+	GetComponent.<Renderer>().material.color = Color(originalR,originalG,originalB);
 	if(testUn.team == testUn.manager.activeTeam && testUn.manager.selected == null){
 		glow();
 	}
@@ -33,5 +33,5 @@ function OnMouseDown(){
 }
 
 function glow(){
-	renderer.material.color = Color(originalR+0.4*Mathf.Sin(4*clock),originalG+0.4*Mathf.Sin(4*clock),originalB+0.4*Mathf.Sin(4*clock));
+	GetComponent.<Renderer>().material.color = Color(originalR+0.4*Mathf.Sin(4*clock),originalG+0.4*Mathf.Sin(4*clock),originalB+0.4*Mathf.Sin(4*clock));
 }

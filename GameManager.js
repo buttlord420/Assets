@@ -83,7 +83,7 @@ function teamBInit() {
 function addTestUnit(xPosition: float, yPosition: float, team: Array, teamFolder: GameObject) {
 	
 	var unitObject = new GameObject();									// Create a new empty game object that will hold a character.
-	var unitScript = unitObject.AddComponent("testUnit");				// Add the testUnit.js script to the object.
+	var unitScript = unitObject.AddComponent.<testUnit>();				// Add the testUnit.js script to the object.
 	
 	unitScript.transform.parent = teamFolder.transform;					// Assign Hierarchy
 	unitScript.transform.position = Vector3(xPosition,yPosition,1);		// Position the character at x,y.								
