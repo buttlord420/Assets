@@ -4,10 +4,10 @@ using System.Collections;
 public enum GunnerState {IDLE, AIMING, MOVING, SHIELD, OVERWATCH};
 
 public class GunnerMovement : MonoBehaviour {
-	public float moveSpeed;
-	GunnerState state = GunnerState.IDLE;
-	int movementStepsToTake = 50;
-	int movementStepsLeft = 0;
+	public float moveRadius;
+	float lerpSpeed = 0.01f;
+	public float currentMoveState = 0f;
+	public GunnerState state = GunnerState.IDLE;
 	Vector2 nextPosition = new Vector2();
 	Transform pointerObject;
 
@@ -22,8 +22,14 @@ public class GunnerMovement : MonoBehaviour {
 		case GunnerState.MOVING:
 			this.transform.position = Vector2.Lerp (this.transform.position,
 			                               this.nextPosition,
-			                               this.moveSpeed);
-			this.movementStepsLeft--;
+			                               currentMoveState);
+			currentMoveState += lerpSpeed;
+			if (currentMoveState >= 1f)
+			{
+				this.transform.position = this.nextPosition;
+				this.currentMoveState = 0f;
+				this.state = GunnerState.IDLE;
+			}
 			break;
 		default:
 			break;
@@ -32,27 +38,13 @@ public class GunnerMovement : MonoBehaviour {
 		if (Input.GetMouseButtonDown (0)) {
 			if (this.state == GunnerState.AIMING) {
 				// nextPosition is our heading
-				this.nextPosition = (Vector2)Camera.main.ScreenToWorldPoint (Input.mousePosition) -
-					(Vector2)this.transform.position;
-				float distanceToNextpoint = nextPosition.magnitude;
-				// Normalize our position
-				this.nextPosition /= distanceToNextpoint;
-				this.nextPosition *= moveSpeed;
+				this.nextPosition = (Vector2)Camera.main.ScreenToWorldPoint (Input.mousePosition);
 				pointerObject.position = nextPosition;
 				this.state = GunnerState.MOVING;
-				this.movementStepsLeft = movementStepsToTake;
 			}
-		}
-		if (this.state == GunnerState.MOVING && this.movementStepsLeft <= 0) {
-			this.state = GunnerState.IDLE;
 		}
 
 	}
-
-	void Update() {
-		switch (this.state)
-		{
-		case GunnerState.IDLE:
 
 
 	void OnMouseDown() {
